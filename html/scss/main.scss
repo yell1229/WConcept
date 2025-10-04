@@ -1,0 +1,92 @@
+.container{
+    .main_top_slide{
+        position:relative;
+        margin-bottom:70px;
+        .swiper-slide{
+            width: 430px;
+            height: 573px;
+            border-radius: 24px;
+            overflow: hidden;
+        }
+        .swiper-pagination{
+            top:calc( 100% + 20px);
+            left:50%;
+            width:1200px;
+            transform:translateX(calc(-50% - 100px))
+        }
+        .swiper-button-next, .swiper-button-prev{
+            top:calc( 100% + 52px);
+            zoom:40%;
+            font-weight: bold;
+            color:#000;
+        }
+        .swiper-button-prev{
+            left:50%;
+            transform:translateX(1350px)
+        }
+        .swiper-button-next{
+            left:50%;
+            transform:translateX(1450px)
+        }
+        .swiper-pause{
+            position:absolute;
+            top:calc( 100% + 5px);
+            left:50%;
+            width:27px;
+            transform:translateX(600px);
+            cursor: pointer;
+            .bi{
+                font-size:27px;
+            }
+        }
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{background:#000;}
+    }
+    .quick_menu .inner{
+        width:1000px;
+        ul{text-align:center}
+        li{
+            display: inline-flex;
+            flex-flow: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            font-size:15px;
+            color: inherit;
+            height: 44px;
+            padding: 5px 17px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 40px;
+            border-radius: 40px;
+            margin-top:8px;
+            gap:5px;
+            cursor: pointer;
+        }
+    }
+}
+// slide style 1
+.style1Swiper{
+    .swiper-slide{
+        width:206px;
+        height:275px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width:36px;
+        height:36px;
+        opacity: 1;
+        visibility: visible;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: 0.2s;
+        &::after{display:none;}
+        & .bi{
+            color:#fff
+        }
+    }
+    &:hover .swiper-button-next, &:hover .swiper-button-prev{
+        background: rgba(0, 0, 0, 0.7);
+    }
+}

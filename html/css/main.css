@@ -1,0 +1,92 @@
+.container .main_top_slide {
+  position: relative;
+  margin-bottom: 70px;
+}
+.container .main_top_slide .swiper-slide {
+  width: 430px;
+  height: 573px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.container .main_top_slide .swiper-pagination {
+  top: calc(100% + 20px);
+  left: 50%;
+  width: 1200px;
+  transform: translateX(calc(-50% - 100px));
+}
+.container .main_top_slide .swiper-button-next, .container .main_top_slide .swiper-button-prev {
+  top: calc(100% + 52px);
+  zoom: 40%;
+  font-weight: bold;
+  color: #000;
+}
+.container .main_top_slide .swiper-button-prev {
+  left: 50%;
+  transform: translateX(1350px);
+}
+.container .main_top_slide .swiper-button-next {
+  left: 50%;
+  transform: translateX(1450px);
+}
+.container .main_top_slide .swiper-pause {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width: 27px;
+  transform: translateX(600px);
+  cursor: pointer;
+}
+.container .main_top_slide .swiper-pause .bi {
+  font-size: 27px;
+}
+.container .main_top_slide .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #000;
+}
+.container .quick_menu .inner {
+  width: 1000px;
+}
+.container .quick_menu .inner ul {
+  text-align: center;
+}
+.container .quick_menu .inner li {
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+  color: inherit;
+  height: 44px;
+  padding: 5px 17px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  border-radius: 40px;
+  margin-top: 8px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.style1Swiper .swiper-slide {
+  width: 206px;
+  height: 275px;
+}
+.style1Swiper .swiper-button-next, .style1Swiper .swiper-button-prev {
+  width: 36px;
+  height: 36px;
+  opacity: 1;
+  visibility: visible;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.style1Swiper .swiper-button-next::after, .style1Swiper .swiper-button-prev::after {
+  display: none;
+}
+.style1Swiper .swiper-button-next .bi, .style1Swiper .swiper-button-prev .bi {
+  color: #fff;
+}
+.style1Swiper:hover .swiper-button-next, .style1Swiper:hover .swiper-button-prev {
+  background: rgba(0, 0, 0, 0.7);
+}
