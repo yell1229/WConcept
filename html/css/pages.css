@@ -1,0 +1,167 @@
+@import '/html/css/common.css';
+.list_wrap .sticky_area {
+  position: sticky;
+  top: 0;
+  lefT: 0;
+  background: #fff;
+  z-index: 10;
+}
+.list_wrap button {
+  border: 0;
+  background: none;
+}
+.list_wrap .tab_area button {
+  font-size: 26px;
+  font-weight: 600;
+}
+.list_wrap .tab_area button:not(.on) {
+  color: rgb(204, 204, 204);
+}
+.list_wrap .select_area {
+  padding: 20px 0;
+}
+.list_wrap .select_area button {
+  padding: 0px 14px 0px 16px;
+  height: 37px;
+  border-radius: 37px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  color: rgb(85, 85, 85);
+}
+.list_wrap .select_area button span {
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  color: inherit;
+}
+.list_wrap .sorting_area {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.list_wrap .sorting_area .check_item button {
+  color: rgb(204, 204, 204);
+}
+.list_wrap .sorting_area .check_item button.on {
+  color: #000;
+}
+
+ul {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 16px;
+}
+ul li {
+  position: relative;
+  width: 207px;
+}
+ul li > div {
+  position: relative;
+  margin-top: 15px;
+}
+ul li > div .tit {
+  font-size: 15px;
+  padding-right: 23px;
+  font-weight: 600;
+}
+ul li > div .txt {
+  margin-top: 4px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: initial;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+}
+ul li > div .price_area {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+ul li > div .price_area .custom_price {
+  width: 100%;
+  color: rgb(172, 172, 172);
+  text-decoration: line-through;
+  font-size: 12px;
+}
+ul li > div .price_area .dc {
+  font-size: 17px;
+  margin-right: 7px;
+  font-weight: 600;
+  color: rgb(255, 70, 0);
+  line-height: 130%;
+}
+ul li > div .price_area .price {
+  font-size: 17px;
+  line-height: 130%;
+  font-weight: 600;
+}
+ul li > div .state_area {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+ul li > div .state_area span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #999;
+  font-size: 12px;
+  line-height: 130%;
+}
+ul li > div .state_area span .bi {
+  font-size: 10px;
+  color: #999;
+}
+ul li > div .tag_area {
+  margin-top: 10px;
+}
+ul li > div .tag_area span {
+  font-size: 12px;
+  padding: 3px 6px;
+  line-height: 110%;
+  font-weight: 500;
+  color: rgb(119, 119, 119);
+  background-color: rgb(246, 246, 246);
+}
+ul li > div .heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 17px;
+  color: #666;
+  cursor: pointer;
+}
+
+.paging_area {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px 4px;
+}
+.paging_area span {
+  color: rgb(153, 153, 153);
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0px 10px;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+.paging_area .active {
+  color: rgb(255, 255, 255);
+  background: rgb(51, 51, 51);
+  border-radius: 50%;
+}
