@@ -44,27 +44,26 @@
 .list_wrap .sorting_area .check_item button.on {
   color: #000;
 }
-
-ul {
+.list_wrap ul {
   margin-top: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 60px 16px;
 }
-ul li {
+.list_wrap ul li {
   position: relative;
   width: 207px;
 }
-ul li > div {
+.list_wrap ul li > div {
   position: relative;
   margin-top: 15px;
 }
-ul li > div .tit {
+.list_wrap ul li > div .tit {
   font-size: 15px;
   padding-right: 23px;
   font-weight: 600;
 }
-ul li > div .txt {
+.list_wrap ul li > div .txt {
   margin-top: 4px;
   display: -webkit-box;
   text-overflow: ellipsis;
@@ -78,37 +77,37 @@ ul li > div .txt {
   font-size: 14px;
   color: rgb(85, 85, 85);
 }
-ul li > div .price_area {
+.list_wrap ul li > div .price_area {
   display: flex;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
   margin-top: 8px;
 }
-ul li > div .price_area .custom_price {
+.list_wrap ul li > div .price_area .custom_price {
   width: 100%;
   color: rgb(172, 172, 172);
   text-decoration: line-through;
   font-size: 12px;
 }
-ul li > div .price_area .dc {
+.list_wrap ul li > div .price_area .dc {
   font-size: 17px;
   margin-right: 7px;
   font-weight: 600;
   color: rgb(255, 70, 0);
   line-height: 130%;
 }
-ul li > div .price_area .price {
+.list_wrap ul li > div .price_area .price {
   font-size: 17px;
   line-height: 130%;
   font-weight: 600;
 }
-ul li > div .state_area {
+.list_wrap ul li > div .state_area {
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
-ul li > div .state_area span {
+.list_wrap ul li > div .state_area span {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -116,14 +115,14 @@ ul li > div .state_area span {
   font-size: 12px;
   line-height: 130%;
 }
-ul li > div .state_area span .bi {
+.list_wrap ul li > div .state_area span .bi {
   font-size: 10px;
   color: #999;
 }
-ul li > div .tag_area {
+.list_wrap ul li > div .tag_area {
   margin-top: 10px;
 }
-ul li > div .tag_area span {
+.list_wrap ul li > div .tag_area span {
   font-size: 12px;
   padding: 3px 6px;
   line-height: 110%;
@@ -131,7 +130,7 @@ ul li > div .tag_area span {
   color: rgb(119, 119, 119);
   background-color: rgb(246, 246, 246);
 }
-ul li > div .heart {
+.list_wrap ul li > div .heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -163,4 +162,102 @@ ul li > div .heart {
   color: rgb(255, 255, 255);
   background: rgb(51, 51, 51);
   border-radius: 50%;
+}
+
+.detail_wrap {
+  padding-top: 20px;
+}
+.detail_wrap .inner {
+  width: 1240px;
+}
+.detail_wrap .location {
+  margin-bottom: 20px;
+}
+.detail_wrap .location ul {
+  display: flex;
+  justify-content: start;
+}
+.detail_wrap .location ul li {
+  position: relative;
+  width: auto;
+  padding: 0 8px 0 0;
+  color: #9d9d9d;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+}
+.detail_wrap .location ul li a {
+  color: #9d9d9d;
+  line-height: 18px;
+  height: 18px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+}
+.detail_wrap .detail_head {
+  display: flex;
+  justify-content: space-between;
+}
+.detail_wrap .detail_head .product_visual_area {
+  width: 525px;
+  gap: 18px;
+}
+.detail_wrap .detail_head .product_visual_area .thumb_img_area {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  height: 80px;
+  overflow: hidden;
+}
+.detail_wrap .detail_head .product_visual_area .thumb_img_area li {
+  width: 80px;
+  cursor: pointer;
+}
+.detail_wrap .detail_head .product_info_area {
+  width: 660px;
+}
+.detail_wrap .detail_head .product_info_area h2 {
+  font-size: 24px;
+  line-height: 29px;
+}
+.detail_wrap .tab_item {
+  display: flex;
+  margin-top: 80px;
+  border-bottom: 2px solid #000;
+}
+.detail_wrap .tab_item li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 60px;
+  border: 1px solid #b5b5b5;
+  border-bottom: 0;
+  border-left: 0;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+}
+.detail_wrap .tab_item li:first-child {
+  border-left: 1px;
+}
+.detail_wrap .tab_item li.active {
+  height: 62px;
+  color: #000;
+  border: 2px solid #000;
+  border-bottom: 0;
+  margin-bottom: -2px;
+  z-index: 10;
+}
+.detail_wrap .tab_detail_area {
+  margin-top: 60px;
+}
+.detail_wrap .tab_detail_area .tab1_detail_area {
+  text-align: center;
+  width: 960px;
+  margin: 0 auto;
+  color: #565656;
 }

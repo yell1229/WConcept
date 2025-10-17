@@ -1,5 +1,5 @@
-@import url("/html/css/common.css");
-@import url("/html/css/layout.css");
+@import url("../common.css");
+@import url("../layout.css");
 .container .main_top_slide {
   position: relative;
   margin-bottom: 70px;
